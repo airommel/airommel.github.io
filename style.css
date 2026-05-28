@@ -126,4 +126,17 @@ video {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.mobile-shot {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 600px) {
+  .mobile-shot {
+    max-width: 45%;
+  }
 }

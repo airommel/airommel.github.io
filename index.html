@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adams Ip | Portfolio</title>
+    <title>Adams Ip — Full-stack Engineer</title>
+    <meta
+      name="description"
+      content="Full-stack engineer (TypeScript / Node / PostgreSQL) based in Manchester, UK. 3+ years shipping production web applications."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -47,212 +57,285 @@
       </svg>
     </div>
 
-    <h1>👋 Greetings, I’m Adams Ip (Ip Zhuo Xuan)</h1>
-    <p>
-      Software Engineer & Technical Instructor from Hong Kong | Relocating to
-      the UK
-    </p>
-    <p>
-      <strong>Linkedin:</strong>
-      <a
-        href="https://www.linkedin.com/in/zhuo-xuan-ip-5717b5203"
-        target="_blank"
-        >adams-ip</a
-      >
-      | <strong>GitHub:</strong>
-      <a href="https://github.com/airommel" target="_blank">airommel</a>
-    </p>
+    <div class="container">
+      <header class="hero">
+        <p class="eyebrow">👋 Hi there</p>
+        <h1>I'm Adams Ip</h1>
+        <p class="hero-tagline">
+          Full-stack engineer · TypeScript / Node / PostgreSQL · Based in
+          Manchester, UK
+        </p>
+        <p class="hero-summary">
+          3+ years shipping production web applications across freelance and
+          instructional environments. Hands-on with CI/CD pipeline design, REST
+          API architecture, and mentoring junior developers. Comfortable owning
+          technical decisions end-to-end in fast-moving, small-team contexts.
+        </p>
+        <ul class="skills">
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>PostgreSQL</li>
+          <li>AWS</li>
+          <li>Docker</li>
+          <li>GitHub Actions</li>
+          <li>REST APIs</li>
+          <li>Playwright</li>
+        </ul>
+        <p class="hero-cta">
+          <a href="mailto:adamsip2012@gmail.com">adamsip2012@gmail.com</a>
+          ·
+          <a href="https://github.com/airommel" target="_blank"
+            >github.com/airommel</a
+          >
+          ·
+          <a
+            href="https://www.linkedin.com/in/zhuo-xuan-ip-5717b5203"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <p class="status">Open to full-stack roles in the UK</p>
+      </header>
 
-    <h2>Mentored Student Projects</h2>
-    <p>
-      <em>Not all mentored projects are included.</em>
-    </p>
+      <section>
+        <h2>Production Work</h2>
+        <div class="project">
+          <h3>Health In Action Community Pharmacy</h3>
+          <p class="role">
+            <strong>My role:</strong> Freelance full-stack developer (2025 –
+            Present) — built and maintain SF Express logistics API integration,
+            POS system integration, and automated order-fulfilment workflows
+            for the live NGO retail platform.
+          </p>
+          <p>
+            A live WooCommerce/WordPress e-commerce platform for the Hong Kong
+            NGO <strong>Health In Action</strong>'s community pharmacy
+            programme. Serves real customers daily; integrates SF Express
+            courier APIs for label generation and tracking, and bridges retail
+            POS data for inventory consistency across online and in-store
+            channels.
+          </p>
+          <p class="tech">
+            Tech Stack: PHP, JavaScript, WooCommerce, WordPress, MySQL, REST
+            APIs
+          </p>
+          <p>
+            <a href="https://hia.org.hk/pharmacy/en/" target="_blank"
+              >Live site →</a
+            >
+          </p>
+          <div class="demo-container">
+            <img
+              src="assets/hia/homepage.png"
+              alt="Health In Action Community Pharmacy live homepage"
+              style="max-width: 90%"
+            />
+          </div>
+        </div>
+      </section>
 
-    <div class="project">
-      <h3>Sign Language Online Learning Platform</h3>
-      <p class="role">
-        <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
-        PoseNet and FaceMesh integration for real-time tracking, advised on
-        backend/frontend separation, and architected the GitHub Actions
-        CI/CD pipeline deploying to AWS. Codebase authored by the student
-        team.
-      </p>
-      <p>
-        A web-based educational platform that teaches sign language using
-        in-browser pose detection. Learners follow a sign and are graded in
-        real time by the AI system against reference key-points.
-      </p>
-      <p class="tech">
-        Tech Stack: PoseNet, FaceMesh, Express, TypeScript, Node.js,
-        PostgreSQL, GitHub Actions, AWS EC2
-      </p>
-      <p>
-        <a
-          href="https://github.com/kellychowkc/sign_teaching_platform"
-          target="_blank"
-          >GitHub Repo</a
-        >
-      </p>
+      <section>
+        <h2>Mentored Student Projects</h2>
+        <p class="section-subtitle">
+          Projects directed and mentored at Tecky Academy (Dec 2022 – Dec
+          2024). Codebases authored by student teams; my role focused on
+          architecture review, PR review, and unblocking technical decisions.
+          Not all mentored projects are included.
+        </p>
+
+        <div class="project">
+          <h3>Pettier 2024</h3>
+          <p class="role">
+            <strong>My role:</strong> Technical mentor (Tecky Academy) —
+            directed architecture, reviewed PRs, and debugged production
+            blockers across a tight 2–3 week sprint. Codebase authored by the
+            student team.
+          </p>
+          <p>
+            A pet-care services marketplace connecting owners with providers.
+            Features Stripe-backed payments with held/release funds, multi-role
+            accounts (clients, providers, admins) with identity verification,
+            an all-in-one task dashboard with calendar, and real-time booking
+            updates via Socket.io.
+          </p>
+          <p class="tech">
+            Tech Stack: React, Node.js, Express, TypeScript, PostgreSQL, Knex,
+            Stripe, Socket.io, AWS S3
+          </p>
+          <p>
+            <a href="https://github.com/yves-cheung/frd-project" target="_blank"
+              >GitHub Repo</a
+            >
+          </p>
+          <div class="demo-container">
+            <img
+              src="assets/c29_pettier/admin_dashboard.png"
+              alt="Pettier admin dashboard (desktop)"
+              style="max-width: 90%; margin-bottom: 1rem"
+            />
+          </div>
+          <div class="demo-container">
+            <img
+              src="assets/c29_pettier/home_mobile.png"
+              alt="Pettier home (mobile)"
+              class="mobile-shot"
+            />
+            <img
+              src="assets/c29_pettier/provider_dashboard_mobile.png"
+              alt="Pettier provider dashboard (mobile)"
+              class="mobile-shot"
+            />
+            <img
+              src="assets/c29_pettier/task_center_mobile.png"
+              alt="Pettier task center (mobile)"
+              class="mobile-shot"
+            />
+          </div>
+          <div class="demo-container">
+            <img
+              src="assets/c29_pettier/calendar_mobile.png"
+              alt="Pettier calendar (mobile)"
+              class="mobile-shot"
+            />
+            <img
+              src="assets/c29_pettier/pet_profile_mobile.png"
+              alt="Pettier pet profile (mobile)"
+              class="mobile-shot"
+            />
+            <img
+              src="assets/c29_pettier/notifications_mobile.png"
+              alt="Pettier notifications (mobile)"
+              class="mobile-shot"
+            />
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>HillingTime 2024</h3>
+          <p class="role">
+            <strong>My role:</strong> Technical mentor (Tecky Academy) —
+            directed the Node.js/Python cross-language architecture, reviewed
+            PRs, and guided the TensorFlow plant-classifier integration.
+            Codebase authored by the student team.
+          </p>
+          <p>
+            A hiking-trail discovery web app for Hong Kong with an AI-powered
+            toxic-plant classifier. Trails are browsable by district with
+            difficulty, duration, and Google Maps integration; users can upload
+            a photo of a plant and have it classified by a TensorFlow model
+            served from a separate Python (Sanic) microservice behind the
+            Node/Express API.
+          </p>
+          <p class="tech">
+            Tech Stack: TensorFlow, TypeScript, Python, Node.js, Express,
+            Sanic, PostgreSQL, Knex, Google Maps API
+          </p>
+          <p>
+            <a href="https://github.com/yves-cheung/bad-project" target="_blank"
+              >GitHub Repo</a
+            >
+          </p>
+          <div class="demo-container">
+            <img
+              src="assets/hilling_time/classifier.png"
+              alt="HillingTime AI plant classifier"
+              style="max-width: 45%"
+            />
+            <img
+              src="assets/hilling_time/route_details.png"
+              alt="HillingTime route details"
+              style="max-width: 45%"
+            />
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Sign Language Online Learning Platform</h3>
+          <p class="role">
+            <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
+            PoseNet and FaceMesh integration for real-time tracking, advised on
+            backend/frontend separation, and architected the GitHub Actions
+            CI/CD pipeline deploying to AWS. Codebase authored by the student
+            team.
+          </p>
+          <p>
+            A web-based educational platform that teaches sign language using
+            in-browser pose detection. Learners follow a sign and are graded in
+            real time by the AI system against reference key-points.
+          </p>
+          <p class="tech">
+            Tech Stack: PoseNet, FaceMesh, Express, TypeScript, Node.js,
+            PostgreSQL, GitHub Actions, AWS EC2
+          </p>
+          <p>
+            <a
+              href="https://github.com/kellychowkc/sign_teaching_platform"
+              target="_blank"
+              >GitHub Repo</a
+            >
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Personal Fitness Social App</h3>
+          <p class="role">
+            <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
+            React Native structure, real-time chat with Socket.io, and AWS
+            deployment; reviewed PRs and unblocked data-sync issues between
+            frontend and backend. Codebase authored by the student team.
+          </p>
+          <p>
+            A mobile social app matching users with fitness partners based on
+            shared goals, with in-app chat and progress tracking.
+          </p>
+          <p class="tech">
+            Tech Stack: React Native, TypeScript, Node.js, Socket.io,
+            PostgreSQL, GitHub Actions, AWS
+          </p>
+          <p>
+            <a
+              href="https://github.com/leaarn/c25-cas-project-04-tw"
+              target="_blank"
+              >GitHub Repo</a
+            >
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Online On-demand Delivery System</h3>
+          <p class="role">
+            <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
+            the YOLOv8/PyTorch model integration, WhatsApp API messaging flow,
+            and OAuth2 authentication; reviewed the CI/CD pipeline for
+            production readiness. Codebase authored by the student team.
+          </p>
+          <p>
+            An end-to-end on-demand delivery platform with real-time order
+            status tracking and a YOLOv8 computer-vision classifier in the
+            order-intake pipeline. Notifications are dispatched via WhatsApp;
+            auth handled via OAuth2.
+          </p>
+          <p class="tech">
+            Tech Stack: Node.js, Express, TypeScript, Python, PyTorch, YOLOv8,
+            PostgreSQL, GitHub Actions, AWS
+          </p>
+          <p>
+            <a
+              href="https://github.com/leaarn/c25-bad-project-04-tw"
+              target="_blank"
+              >GitHub Repo</a
+            >
+          </p>
+        </div>
+
+        <p class="footer-note">
+          All Tecky Academy projects above were developed by student teams
+          under my mentorship within a tight 2–3 week timeframe.
+        </p>
+      </section>
     </div>
-
-    <div class="project">
-      <h3>Personal Fitness Social App</h3>
-      <p class="role">
-        <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
-        React Native structure, real-time chat with Socket.io, and AWS
-        deployment; reviewed PRs and unblocked data-sync issues between
-        frontend and backend. Codebase authored by the student team.
-      </p>
-      <p>
-        A mobile social app matching users with fitness partners based on
-        shared goals, with in-app chat and progress tracking.
-      </p>
-      <p class="tech">
-        Tech Stack: React Native, TypeScript, Node.js, Socket.io, PostgreSQL,
-        GitHub Actions, AWS
-      </p>
-      <p>
-        <a href="https://github.com/leaarn/c25-cas-project-04-tw" target="_blank"
-          >GitHub Repo</a
-        >
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Online On-demand Delivery System</h3>
-      <p class="role">
-        <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
-        the YOLOv8/PyTorch model integration, WhatsApp API messaging flow,
-        and OAuth2 authentication; reviewed the CI/CD pipeline for production
-        readiness. Codebase authored by the student team.
-      </p>
-      <p>
-        An end-to-end on-demand delivery platform with real-time order status
-        tracking and a YOLOv8 computer-vision classifier in the order-intake
-        pipeline. Notifications are dispatched via WhatsApp; auth handled via
-        OAuth2.
-      </p>
-      <p class="tech">
-        Tech Stack: Node.js, Express, TypeScript, Python, PyTorch, YOLOv8,
-        PostgreSQL, GitHub Actions, AWS
-      </p>
-      <p>
-        <a href="https://github.com/leaarn/c25-bad-project-04-tw" target="_blank"
-          >GitHub Repo</a
-        >
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Pettier 2024</h3>
-      <p class="role">
-        <strong>My role:</strong> Technical mentor (Tecky Academy) — directed
-        architecture, reviewed PRs, and debugged production blockers across a
-        tight 2–3 week sprint. Codebase authored by the student team.
-      </p>
-      <p>
-        A pet-care services marketplace connecting owners with providers.
-        Features Stripe-backed payments with held/release funds, multi-role
-        accounts (clients, providers, admins) with identity verification, an
-        all-in-one task dashboard with calendar, and real-time booking updates
-        via Socket.io.
-      </p>
-      <p class="tech">
-        Tech Stack: React, Node.js, Express, TypeScript, PostgreSQL, Knex,
-        Stripe, Socket.io, AWS S3
-      </p>
-      <p>
-        <a href="https://github.com/yves-cheung/frd-project" target="_blank"
-          >GitHub Repo</a
-        >
-      </p>
-      <div class="demo-container">
-        <img
-          src="assets/c29_pettier/admin_dashboard.png"
-          alt="Pettier admin dashboard (desktop)"
-          style="max-width: 90%; margin-bottom: 1rem"
-        />
-      </div>
-      <div class="demo-container">
-        <img
-          src="assets/c29_pettier/home_mobile.png"
-          alt="Pettier home (mobile)"
-          class="mobile-shot"
-        />
-        <img
-          src="assets/c29_pettier/provider_dashboard_mobile.png"
-          alt="Pettier provider dashboard (mobile)"
-          class="mobile-shot"
-        />
-        <img
-          src="assets/c29_pettier/task_center_mobile.png"
-          alt="Pettier task center (mobile)"
-          class="mobile-shot"
-        />
-      </div>
-      <div class="demo-container">
-        <img
-          src="assets/c29_pettier/calendar_mobile.png"
-          alt="Pettier calendar (mobile)"
-          class="mobile-shot"
-        />
-        <img
-          src="assets/c29_pettier/pet_profile_mobile.png"
-          alt="Pettier pet profile (mobile)"
-          class="mobile-shot"
-        />
-        <img
-          src="assets/c29_pettier/notifications_mobile.png"
-          alt="Pettier notifications (mobile)"
-          class="mobile-shot"
-        />
-      </div>
-    </div>
-
-    <div class="project">
-      <h3>HillingTime 2024</h3>
-      <p class="role">
-        <strong>My role:</strong> Technical mentor (Tecky Academy) — directed
-        the Node.js/Python cross-language architecture, reviewed PRs, and
-        guided the TensorFlow plant-classifier integration. Codebase authored
-        by the student team.
-      </p>
-      <p>
-        A hiking-trail discovery web app for Hong Kong with an AI-powered
-        toxic-plant classifier. Trails are browsable by district with
-        difficulty, duration, and Google Maps integration; users can upload a
-        photo of a plant and have it classified by a TensorFlow model served
-        from a separate Python (Sanic) microservice behind the Node/Express
-        API.
-      </p>
-      <p class="tech">
-        Tech Stack: TensorFlow, TypeScript, Python, Node.js, Express, Sanic,
-        PostgreSQL, Knex, Google Maps API
-      </p>
-      <p>
-        <a href="https://github.com/yves-cheung/bad-project" target="_blank"
-          >GitHub Repo</a
-        >
-      </p>
-      <div class="demo-container">
-        <img
-          src="assets/hilling_time/classifier.png"
-          alt="HillingTime AI plant classifier"
-          style="max-width: 45%; margin: 0 0.5rem"
-        />
-        <img
-          src="assets/hilling_time/route_details.png"
-          alt="HillingTime route details"
-          style="max-width: 45%; margin: 0 0.5rem"
-        />
-      </div>
-    </div>
-    <p>
-      <em
-        >All projects above were developed by student teams under my mentorship
-        within a tight 2–3 week timeframe.</em
-      >
-    </p>
 
     <script>
       const toggle = document.getElementById("themeToggle");

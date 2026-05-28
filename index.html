@@ -1,87 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adams Ip | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 2rem;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    .project {
-      background: #fff;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      border-left: 5px solid #3498db;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .project a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    .project a:hover {
-      text-decoration: underline;
-    }
-    .tech {
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <h1>👋 Hi, I’m Adams Ip (Ip Zhuo Xuan)</h1>
-  <p>Software Engineer & Technical Instructor from Hong Kong | Preparing to relocate to the UK (BN(O) Visa)</p>
-  <p><strong>Email:</strong> adamsip2012@gmail.com | <strong>GitHub:</strong> <a href="https://github.com/airommel" target="_blank">airommel</a></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adams Ip | Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="toggle">
+      <svg
+        id="sunIcon"
+        class="theme-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </svg>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+      <svg
+        id="moonIcon"
+        class="theme-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79z" />
+      </svg>
+    </div>
 
-  <h2>🧑‍🏫 Mentored Student Projects</h2>
+    <h1>👋 Greetings, I’m Adams Ip (Ip Zhuo Xuan)</h1>
+    <p>
+      Software Engineer & Technical Instructor from Hong Kong | Relocating to
+      the UK
+    </p>
+    <p>
+      <strong>Linkedin:</strong>
+      <a
+        href="https://www.linkedin.com/in/zhuo-xuan-ip-5717b5203"
+        target="_blank"
+        >adams-ip</a
+      >
+      | <strong>GitHub:</strong>
+      <a href="https://github.com/airommel" target="_blank">airommel</a>
+    </p>
 
-  <div class="project">
-    <h3>🧠 Sign Language Online Learning Platform</h3>
-    <p>AI-enhanced sign language learning app using pose detection.</p>
-    <p>Guided team on CI/CD, testing structure, AWS deployment, and frontend/backend design.</p>
-    <p class="tech">Tech: PoseNet, Node.js, Express, TypeScript, PostgreSQL, AWS, GitHub Actions</p>
-    <p><a href="https://bad-project.tecky-kc.me" target="_blank">Live Demo</a> | <a href="https://github.com/kellychowkc/sign_teaching_platform" target="_blank">GitHub</a></p>
-  </div>
+    <h2>Mentored Student Projects</h2>
+    <p>
+      <em>Not all mentored projects are included.</em>
+    </p>
 
-  <div class="project">
-    <h3>🧺 HillingTime 2024</h3>
-    <p>Interactive hiking route web app with AI-powered plant classifier.</p>
-    <p>Mentored MVC architecture, TensorFlow model integration, and Maps API development.</p>
-    <p class="tech">Tech: Node.js, TypeScript, Sanic, Python, TensorFlow, Google Maps API</p>
-    <p><a href="https://github.com/yves-cheung/bad-project" target="_blank">GitHub</a></p>
-  </div>
+    <div class="project">
+      <h3>Sign Language Online Learning Platform</h3>
+      <p class="role">
+        <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
+        PoseNet and FaceMesh integration for real-time tracking, advised on
+        backend/frontend separation, and architected the GitHub Actions
+        CI/CD pipeline deploying to AWS. Codebase authored by the student
+        team.
+      </p>
+      <p>
+        A web-based educational platform that teaches sign language using
+        in-browser pose detection. Learners follow a sign and are graded in
+        real time by the AI system against reference key-points.
+      </p>
+      <p class="tech">
+        Tech Stack: PoseNet, FaceMesh, Express, TypeScript, Node.js,
+        PostgreSQL, GitHub Actions, AWS EC2
+      </p>
+      <p>
+        <a
+          href="https://github.com/kellychowkc/sign_teaching_platform"
+          target="_blank"
+          >GitHub Repo</a
+        >
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>🐾 Pettier 2024</h3>
-    <p>Pet care service booking and task management platform.</p>
-    <p>Assisted in payment system integration, real-time updates, and calendar syncing.</p>
-    <p class="tech">Tech: React, Node.js, TypeScript, PostgreSQL, Stripe, Socket.io</p>
-    <p><a href="https://github.com/yves-cheung/frd-project" target="_blank">GitHub</a></p>
-  </div>
+    <div class="project">
+      <h3>Personal Fitness Social App</h3>
+      <p class="role">
+        <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
+        React Native structure, real-time chat with Socket.io, and AWS
+        deployment; reviewed PRs and unblocked data-sync issues between
+        frontend and backend. Codebase authored by the student team.
+      </p>
+      <p>
+        A mobile social app matching users with fitness partners based on
+        shared goals, with in-app chat and progress tracking.
+      </p>
+      <p class="tech">
+        Tech Stack: React Native, TypeScript, Node.js, Socket.io, PostgreSQL,
+        GitHub Actions, AWS
+      </p>
+      <p>
+        <a href="https://github.com/leaarn/c25-cas-project-04-tw" target="_blank"
+          >GitHub Repo</a
+        >
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>🚚 Online On-demand Delivery System</h3>
-    <p>Delivery app with YOLOv8 object detection and WhatsApp API integration.</p>
-    <p>Mentored secure OAuth login, ML order placement, and automated testing pipelines.</p>
-    <p class="tech">Tech: Node.js, TypeScript, Express, PostgreSQL, PyTorch, YOLOv8, GitHub Actions, AWS</p>
-    <p><a href="https://chickenvan.online" target="_blank">Live Demo</a> | <a href="https://github.com/leaarn/c25-bad-project-04-tw" target="_blank">GitHub</a></p>
-  </div>
+    <div class="project">
+      <h3>Online On-demand Delivery System</h3>
+      <p class="role">
+        <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
+        the YOLOv8/PyTorch model integration, WhatsApp API messaging flow,
+        and OAuth2 authentication; reviewed the CI/CD pipeline for production
+        readiness. Codebase authored by the student team.
+      </p>
+      <p>
+        An end-to-end on-demand delivery platform with real-time order status
+        tracking and a YOLOv8 computer-vision classifier in the order-intake
+        pipeline. Notifications are dispatched via WhatsApp; auth handled via
+        OAuth2.
+      </p>
+      <p class="tech">
+        Tech Stack: Node.js, Express, TypeScript, Python, PyTorch, YOLOv8,
+        PostgreSQL, GitHub Actions, AWS
+      </p>
+      <p>
+        <a href="https://github.com/leaarn/c25-bad-project-04-tw" target="_blank"
+          >GitHub Repo</a
+        >
+      </p>
+    </div>
 
-  <div class="project">
-    <h3>🏋️ Personal Fitness Social App</h3>
-    <p>React Native app for trainer matching and fitness goal tracking with live chat.</p>
-    <p>Guided MVC development, chat integration, and deployment via Docker + AWS.</p>
-    <p class="tech">Tech: React Native, React, Node.js, Express, PostgreSQL, Docker, Socket.io, AWS</p>
-    <p><a href="https://github.com/leaarn/c25-cas-project-04-tw" target="_blank">GitHub</a></p>
-  </div>
+    <div class="project">
+      <h3>Pettier 2024</h3>
+      <p class="role">
+        <strong>My role:</strong> Technical mentor (Tecky Academy) — directed
+        architecture, reviewed PRs, and debugged production blockers across a
+        tight 2–3 week sprint. Codebase authored by the student team.
+      </p>
+      <p>
+        A pet-care services marketplace connecting owners with providers.
+        Features Stripe-backed payments with held/release funds, multi-role
+        accounts (clients, providers, admins) with identity verification, an
+        all-in-one task dashboard with calendar, and real-time booking updates
+        via Socket.io.
+      </p>
+      <p class="tech">
+        Tech Stack: React, Node.js, Express, TypeScript, PostgreSQL, Knex,
+        Stripe, Socket.io, AWS S3
+      </p>
+      <p>
+        <a href="https://github.com/yves-cheung/frd-project" target="_blank"
+          >GitHub Repo</a
+        >
+      </p>
+      <div class="demo-container">
+        <img
+          src="assets/c29_pettier/admin_dashboard.png"
+          alt="Pettier admin dashboard"
+          style="max-width: 90%"
+        />
+      </div>
+    </div>
 
-  <p><em>Note: All projects above were developed by student teams under my mentorship during their final capstone phase.</em></p>
-</body>
+    <div class="project">
+      <h3>HillingTime 2024</h3>
+      <p class="role">
+        <strong>My role:</strong> Technical mentor (Tecky Academy) — directed
+        the Node.js/Python cross-language architecture, reviewed PRs, and
+        guided the TensorFlow plant-classifier integration. Codebase authored
+        by the student team.
+      </p>
+      <p>
+        A hiking-trail discovery web app for Hong Kong with an AI-powered
+        toxic-plant classifier. Trails are browsable by district with
+        difficulty, duration, and Google Maps integration; users can upload a
+        photo of a plant and have it classified by a TensorFlow model served
+        from a separate Python (Sanic) microservice behind the Node/Express
+        API.
+      </p>
+      <p class="tech">
+        Tech Stack: TensorFlow, TypeScript, Python, Node.js, Express, Sanic,
+        PostgreSQL, Knex, Google Maps API
+      </p>
+      <p>
+        <a href="https://github.com/yves-cheung/bad-project" target="_blank"
+          >GitHub Repo</a
+        >
+      </p>
+      <div class="demo-container">
+        <img
+          src="assets/hilling_time/classifier.png"
+          alt="HillingTime AI plant classifier"
+          style="max-width: 45%; margin: 0 0.5rem"
+        />
+        <img
+          src="assets/hilling_time/route_details.png"
+          alt="HillingTime route details"
+          style="max-width: 45%; margin: 0 0.5rem"
+        />
+      </div>
+    </div>
+    <p>
+      <em
+        >All projects above were developed by student teams under my mentorship
+        within a tight 2–3 week timeframe.</em
+      >
+    </p>
+
+    <script>
+      const toggle = document.getElementById("themeToggle");
+      const root = document.documentElement;
+      toggle.addEventListener("change", () => {
+        root.setAttribute("data-theme", toggle.checked ? "dark" : "light");
+      });
+    </script>
+  </body>
 </html>

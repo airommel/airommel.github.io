@@ -1,0 +1,129 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #333;
+  --card-bg: #fff;
+  --accent: #3498db;
+  --heading: #2c3e50;
+}
+
+[data-theme="dark"] {
+  --bg: #1e1e1e;
+  --text: #e0e0e0;
+  --card-bg: #2a2a2a;
+  --accent: #4aa3df;
+  --heading: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 2rem;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+h1,
+h2,
+h3 {
+  color: var(--heading);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.project {
+  background: var(--card-bg);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid var(--accent);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.project a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+.tech {
+  font-size: 0.9rem;
+  color: #777;
+}
+.role {
+  font-size: 0.95rem;
+  background: rgba(52, 152, 219, 0.08);
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0 1rem;
+}
+.toggle {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--accent);
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.theme-icon {
+  width: 24px;
+  height: 24px;
+}
+#moonIcon {
+  transform: scale(1.4);
+  stroke-width: 1;
+  position: relative;
+  bottom: -2px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.demo-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

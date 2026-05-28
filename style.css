@@ -91,6 +91,12 @@ p {
   font-size: 0.95rem;
   margin: 0;
 }
+.hello-gif {
+  height: 1.8em;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
 .hero-tagline {
   font-size: 1.15rem;
   color: var(--text);
@@ -193,12 +199,43 @@ p {
 .demo-container img {
   height: auto;
 }
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: 55fr 30fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem auto 0.5rem;
+  justify-content: center;
+}
+.demo-grid-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.demo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .demo-container img:not(.mobile-shot) {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .mobile-shot {
   max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.mobile-shot-4 {
+  max-width: 22%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -288,7 +325,8 @@ input:checked + .slider:before {
   .project {
     padding: 1.25rem;
   }
-  .mobile-shot {
+  .mobile-shot,
+  .mobile-shot-4 {
     max-width: 45%;
   }
   .toggle {

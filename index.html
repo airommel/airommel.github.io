@@ -59,7 +59,15 @@
 
     <div class="container">
       <header class="hero">
-        <p class="eyebrow">👋 Hi there</p>
+        <p class="eyebrow">
+          Hello there
+          <img
+            src="assets/90872-hellothere.gif"
+            alt=""
+            class="hello-gif"
+            aria-hidden="true"
+          />
+        </p>
         <h1>I'm Adams Ip</h1>
         <p class="hero-tagline">
           Full-stack engineer · TypeScript / Node / PostgreSQL · Based in
@@ -74,9 +82,12 @@
         <ul class="skills">
           <li>TypeScript</li>
           <li>Node.js</li>
+          <li>Express</li>
           <li>React</li>
+          <li>React Native</li>
           <li>Next.js</li>
           <li>PostgreSQL</li>
+          <li>MongoDB</li>
           <li>AWS</li>
           <li>Docker</li>
           <li>GitHub Actions</li>
@@ -91,7 +102,7 @@
           >
           ·
           <a
-            href="https://www.linkedin.com/in/zhuo-xuan-ip-5717b5203"
+            href="https://www.linkedin.com/in/adams-ip-5717b5203/"
             target="_blank"
             >LinkedIn</a
           >
@@ -141,8 +152,8 @@
         <p class="section-subtitle">
           Projects directed and mentored at Tecky Academy (Dec 2022 – Dec
           2024). Codebases authored by student teams; my role focused on
-          architecture review, PR review, and unblocking technical decisions.
-          Not all mentored projects are included.
+          architecture review, PR review, hands-on debugging, and unblocking
+          technical decisions. Not all mentored projects are included.
         </p>
 
         <div class="project">
@@ -237,17 +248,23 @@
               >GitHub Repo</a
             >
           </p>
-          <div class="demo-container">
-            <img
-              src="assets/hilling_time/classifier.png"
-              alt="HillingTime AI plant classifier"
-              style="max-width: 45%"
-            />
-            <img
-              src="assets/hilling_time/route_details.png"
-              alt="HillingTime route details"
-              style="max-width: 45%"
-            />
+          <div class="demo-grid">
+            <div class="demo-grid-stack">
+              <img
+                src="assets/hilling_time/classifier.png"
+                alt="HillingTime AI plant classifier"
+              />
+              <img
+                src="assets/hilling_time/homepage.png"
+                alt="HillingTime homepage"
+              />
+            </div>
+            <div class="demo-grid-stack">
+              <img
+                src="assets/hilling_time/route_details_full.png"
+                alt="HillingTime route details (full page)"
+              />
+            </div>
           </div>
         </div>
 
@@ -279,7 +296,7 @@
         </div>
 
         <div class="project">
-          <h3>Personal Fitness Social App</h3>
+          <h3>GyMatess — Personal Fitness Social App</h3>
           <p class="role">
             <strong>My role:</strong> Technical mentor (Tecky Academy) — guided
             React Native structure, real-time chat with Socket.io, and AWS
@@ -287,12 +304,14 @@
             frontend and backend. Codebase authored by the student team.
           </p>
           <p>
-            A mobile social app matching users with fitness partners based on
-            shared goals, with in-app chat and progress tracking.
+            A React Native mobile app matching users with personal trainers and
+            fellow fitness enthusiasts based on shared goals. Features
+            personalised profiles, swipe-style discovery, and real-time
+            messaging powered by Socket.io.
           </p>
           <p class="tech">
-            Tech Stack: React Native, TypeScript, Node.js, Socket.io,
-            PostgreSQL, GitHub Actions, AWS
+            Tech Stack: React Native, TypeScript, Node.js, Express, Socket.io,
+            PostgreSQL, Knex, Docker, GitHub Actions, AWS EC2
           </p>
           <p>
             <a
@@ -301,6 +320,28 @@
               >GitHub Repo</a
             >
           </p>
+          <div class="demo-container">
+            <img
+              src="assets/c25_fitness/profile_1.png"
+              alt="GyMatess profile screen"
+              class="mobile-shot-4"
+            />
+            <img
+              src="assets/c25_fitness/matching_1.png"
+              alt="GyMatess trainer discovery screen"
+              class="mobile-shot-4"
+            />
+            <img
+              src="assets/c25_fitness/chat_1.png"
+              alt="GyMatess message inbox"
+              class="mobile-shot-4"
+            />
+            <img
+              src="assets/c25_fitness/chat_2.png"
+              alt="GyMatess active chat with image upload"
+              class="mobile-shot-4"
+            />
+          </div>
         </div>
 
         <div class="project">
